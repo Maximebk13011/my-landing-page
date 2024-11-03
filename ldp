@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            font-family: 'Georgia', serif;
+            color: #2b2d42; /* Darker text color */
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #2d2d2d;
+            padding: 15px 0;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            font-size: 1.8rem;
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar .nav-links li {
+            margin: 0 15px;
+        }
+
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #d4af37;
+        }
+
+        /* Header */
+        .header {
+            background: url('images/voiture.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 140px 20px;
+            text-align: center;
+            margin-top: 50px;
+            background-size: cover;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #d4af37;
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .btn-primary {
+            padding: 12px 24px;
+            background-color: #d4af37;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #b68e2a;
+            transform: scale(1.05);
+        }
+
+        /* Section Styles */
+        .about, .events, .cars-section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .about {
+            background-color: #f0f0f0;
+        }
+
+        .about h2, .events h2, .cars-section h2 {
+            font-size: 2.5rem;
+            color: #2d2d2d;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .about p, .events p, .car-card p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        /* Card Styles */
+        .card, .event-card, .car-card {
+            background-color: #ffffff;
+            margin: 20px auto;
+            padding: 25px;
+            max-width: 800px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card h2, .car-card h3 {
+            color: #d50032; /* Strong red color for headers */
+        }
+
+        /* Specific Card Styles */
+        .event-card {
+            padding-left: 40px;
+        }
+
+        .car-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #2d2d2d;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenu de la page -->
+    <header id="Top">
+        <h1>Bienvenue sur mon site</h1>
+    </header>
+
+    <section class="about">
+        <h2>À propos</h2>
+        <p>Ceci est une page de test pour vérifier le style CSS.</p>
+    </section>
+
+    <section class="events">
+        <h2>Événements</h2>
+        <div class="event-card">
+            <h3>Événement spécial</h3>
+            <p>Détails sur cet événement spécial.</p>
+        </div>
+    </section>
+
+    <section class="cars-section">
+        <h2>Nos véhicules</h2>
+        <div class="car-card">
+            <img src="images/voiture.jpg" alt="Voiture">
+            <h3>Voiture de luxe</h3>
+            <p>Description de la voiture.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Mon Site. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
